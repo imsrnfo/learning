@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:object="${test}">
+        <select >
+            <option value="">Select Test Order</option>
+            <option th:each="objeto : ${objetos}"
+                    th:value="${objeto.id}"
+                    th:text="${objeto.nombre}"></option>
+        </select>
+    </div>
+</body>
+</html>
